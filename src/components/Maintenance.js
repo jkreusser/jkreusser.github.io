@@ -13,7 +13,7 @@ const Maintenance = () => {
                     style={{ height: 250, width: 250 }}
                 />
                 <div className='text-xl flex flex-col mt-4 font-normal text-center'>
-                    <span>I'm just fixing a few things.</span>
+                    <span>I'm just updating a few things.</span>
                     <span>Be right back!</span>
                 </div>
             </div>
