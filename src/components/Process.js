@@ -1,8 +1,8 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import strategyAnimation from '../lottie/strategy_animation.json';
-import designAnimation from '../lottie/design_animation.json';
-import developmentAnimation from '../lottie/development_animation.json';
+import strategyAnimation from '../lottie/strategyAnimation.json';
+import designAnimation from '../lottie/designAnimation.json';
+import developmentAnimation from '../lottie/developmentAnimation.json';
 import { useTranslation } from 'react-i18next';
 
 const Process = () => {

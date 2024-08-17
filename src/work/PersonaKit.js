@@ -43,6 +43,7 @@ const PersonaKit = () => {
                     <img src="/personakit/personakit_styleguide.webp" alt="PersonaKit Styleguide" className='object-contain w-full h-auto' />
                     <div className="relative pt-[56.25%]">
                         <iframe
+                            title='PersonaKit Showcase'
                             src="https://player.vimeo.com/video/999348080?h=19dd9fe9e2&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&muted=1&dnt=1"
                             className="absolute top-0 left-0 w-full h-full"
                             allow="autoplay; fullscreen; picture-in-picture">

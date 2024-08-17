@@ -20,7 +20,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const location = useLocation();
   const [firstLoad, setFirstLoad] = useState(true);
 
