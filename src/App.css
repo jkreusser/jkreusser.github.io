@@ -12,6 +12,10 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
 }
@@ -22,4 +26,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.hover-path:hover svg path {
+  stroke: black;
+}
+
+.hover-path-white:hover svg path {
+  stroke: white;
 }

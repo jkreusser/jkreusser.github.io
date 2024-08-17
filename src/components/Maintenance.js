@@ -1,10 +1,10 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import animationData from '../logoAnimation.json';
+import animationData from '../lottie/logoAnimation.json';
 
 const Maintenance = () => {
     return (
-        <div className='max-w-3xl mx-auto p-4 h-screen flex flex-col items-center justify-center'>
+        <div className='max-w-screen-2xl mx-auto p-4 h-screen flex flex-col items-center justify-center'>
             <div>
                 <Lottie
                     animationData={animationData}
