@@ -10,21 +10,21 @@ const Work = () => {
             <h2 className='mb-8 text-4xl'>{t('work')}</h2>
             <hr className='border-white/10 w-full' />
             <div className="relative group w-full">
-                <Link to="/personakit" className="relative block text-4xl lg:text-6xl font-extralight px-8 2xl:px-16 py-16 md:py-24 text-white overflow-hidden group-hover:text-black transition-colors duration-[800ms]">
+                <Link to="/personakit" className="cursor-pointer relative block text-4xl lg:text-6xl font-extralight px-8 2xl:px-16 py-16 md:py-24 text-white overflow-hidden group-hover:text-black transition-colors duration-[800ms]">
                     PersonaKit - Web App Design & Development
                     <span className="absolute inset-0 bg-white transition-transform duration-[800ms] transform -translate-x-full group-hover:translate-x-0 z-[-1]"></span>
                 </Link>
             </div>
             <hr className='border-white/10 w-full' />
             <div className="relative group w-full">
-                <Link to="/dentaltechnik-weber" className="relative block text-4xl lg:text-6xl font-extralight px-8 2xl:px-16 py-16 md:py-24 text-white overflow-hidden group-hover:text-black transition-colors duration-[800ms]">
+                <Link to="/dentaltechnik-weber" className="cursor-pointer relative block text-4xl lg:text-6xl font-extralight px-8 2xl:px-16 py-16 md:py-24 text-white overflow-hidden group-hover:text-black transition-colors duration-[800ms]">
                     Dentaltechnik Weber - Corporate Identity
                     <span className="absolute inset-0 bg-white transition-transform duration-[800ms] transform -translate-x-full group-hover:translate-x-0 z-[-1]"></span>
                 </Link>
             </div>
             <hr className='border-white/10 w-full' />
             <div className="relative group w-full">
-                <Link to="/shape-up" className="relative block text-4xl lg:text-6xl font-extralight px-8 2xl:px-16 py-16 md:py-24 text-white overflow-hidden group-hover:text-black transition-colors duration-[800ms]">
+                <Link to="/shape-up" className="cursor-pointer relative block text-4xl lg:text-6xl font-extralight px-8 2xl:px-16 py-16 md:py-24 text-white overflow-hidden group-hover:text-black transition-colors duration-[800ms]">
                     Shape Up - App Design
                     <span className="absolute inset-0 bg-white transition-transform duration-[800ms] transform -translate-x-full group-hover:translate-x-0 z-[-1]"></span>
                 </Link>

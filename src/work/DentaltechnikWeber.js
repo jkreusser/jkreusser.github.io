@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const DentaltechnikWeber = () => {
     const { t } = useTranslation();
@@ -42,7 +43,7 @@ const DentaltechnikWeber = () => {
                 <div className='lg:w-3/4 flex flex-col gap-8'>
                     <img src="/weber/weber_business_cards.webp" alt="Dentaltechnik Weber Business Cards" className='object-contain w-full h-auto' />
                     <img src="/weber/weber_letter.webp" alt="Dentaltechnik Weber Letter" className='object-contain w-full h-auto' />
-                    <div className='flex flex-row gap-8 w-full'>
+                    <div className='flex flex-col sm:flex-row gap-8 w-full'>
                         <div>
                             <img src="/weber/weber_social_media.webp" alt="Dentaltechnik Weber Social Media" className='object-contain w-full h-auto' />
                         </div>
@@ -59,9 +60,9 @@ const DentaltechnikWeber = () => {
                     <h2 className='text-4xl w-full mb-8'>{t('next-project')}</h2>
                     <hr className='border-white/10 w-full'></hr>
                 </div>
-                <a href="/shape-up">
+                <Link to="/shape-up">
                     <img src="/shapeup/shapeup_cover.webp" alt="Shape Up Cover" className='object-contain w-full h-auto' />
-                </a>
+                </Link>
             </div>
         </section>
     );

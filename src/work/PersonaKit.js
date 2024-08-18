@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const PersonaKit = () => {
     const { t } = useTranslation();
@@ -49,7 +50,7 @@ const PersonaKit = () => {
                             allow="autoplay; fullscreen; picture-in-picture">
                         </iframe>
                     </div>
-                    <div className='flex flex-row gap-8 w-full'>
+                    <div className='flex flex-col sm:flex-row gap-8 w-full'>
                         <div>
                             <img src="/personakit/personakit_logo_1.webp" alt="PersonaKit Logo 1" className='object-contain w-full h-auto' />
                         </div>
@@ -59,7 +60,7 @@ const PersonaKit = () => {
                     </div>
                     <img src="/personakit/personakit_customer_journey.webp" alt="PersonaKit Customer Journey" className='object-contain w-full h-auto' />
                     <img src="/personakit/personakit_generator.webp" alt="PersonaKit Generator" className='object-contain w-full h-auto' />
-                    <div className='flex flex-row gap-8 w-full'>
+                    <div className='flex flex-col sm:flex-row gap-8 w-full'>
                         <div>
                             <img src="/personakit/personakit_chat.webp" alt="PersonaKit Chat" className='object-contain w-full h-auto' />
                         </div>
@@ -75,9 +76,9 @@ const PersonaKit = () => {
                     <h2 className='text-4xl w-full mb-8'>{t('next-project')}</h2>
                     <hr className='border-white/10 w-full'></hr>
                 </div>
-                <a href="/dentaltechnik-weber">
+                <Link to="/dentaltechnik-weber">
                     <img src="/weber/weber_cover.webp" alt="Dentaltechnik Weber Cover" className='object-contain w-full h-auto' />
-                </a>
+                </Link>
             </div>
         </section>
     );

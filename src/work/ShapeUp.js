@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const ShapeUp = () => {
     const { t } = useTranslation();
@@ -40,7 +41,7 @@ const ShapeUp = () => {
                 </div>
                 {/* Right-side content */}
                 <div className='lg:w-3/4 flex flex-col gap-8'>
-                    <div className='flex flex-row gap-8 w-full'>
+                    <div className='flex flex-col sm:flex-row gap-8 w-full'>
                         <div>
                             <img src="/shapeup/shapeup_font.webp" alt="Shape Up Font" className='object-contain w-full h-auto' />
                         </div>
@@ -49,7 +50,7 @@ const ShapeUp = () => {
                         </div>
                     </div>
                     <img src="/shapeup/shapeup_overview.webp" alt="Shape Up Overview" className='object-contain w-full h-auto' />
-                    <div className='flex flex-row gap-8 w-full'>
+                    <div className='flex flex-col sm:flex-row gap-8 w-full'>
                         <div>
                             <img src="/shapeup/shapeup_schedule.webp" alt="Shape Up Schedule" className='object-contain w-full h-auto' />
                         </div>
@@ -65,9 +66,9 @@ const ShapeUp = () => {
                     <h2 className='text-4xl w-full mb-8'>{t('next-project')}</h2>
                     <hr className='border-white/10 w-full'></hr>
                 </div>
-                <a href="/personakit">
+                <Link to="/personakit">
                     <img src="/personakit/personakit_cover.webp" alt="PersonaKit Cover" className='object-contain w-full h-auto' />
-                </a>
+                </Link>
             </div>
         </section>
     );

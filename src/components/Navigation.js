@@ -46,9 +46,9 @@ const Navigation = () => {
                 </li>
                 {navItems.map((item, index) => (
                     <li key={index} className='flex items-center'>
-                        <a
-                            href={item.href}
-                            className={`uppercase px-4 py-2 flex items-center hover:bg-white hover:text-black rounded-full ${item.hasIcon ? 'border border-white/10 hover-path' : ''}`}
+                        <Link
+                            to={item.href}
+                            className={`cursor-pointer uppercase px-4 py-2 flex items-center hover:bg-white hover:text-black rounded-full ${item.hasIcon ? 'border border-white/10 hover-path' : ''}`}
                             onClick={() => setMenuOpen(false)}
                         >
                             {t(item.nameKey)}
@@ -65,7 +65,7 @@ const Navigation = () => {
                                     <path d="M1.15997 8.84L8.99997 1" stroke="white" />
                                 </svg>
                             )}
-                        </a>
+                        </Link>
                     </li>
                 ))}
                 <li className="pt-2 lg:pt-0"><LanguageSwitcher /></li>

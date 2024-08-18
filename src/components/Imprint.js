@@ -33,11 +33,11 @@ const Imprint = () => {
                 <div className='flex flex-col gap-8 md:w-1/2'>
                     <div>
                         <h2 className="text-lg font-semibold mb-2">{t('eu-resolution-heading')}</h2>
-                        <p className='max-w-2xl'>{t('eu-resolution-praragraph-1')} <a href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr/</a>. {t('eu-resolution-praragraph-2')}</p>
+                        <p className='max-w-2xl'>{t('eu-resolution-praragraph-1')} <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>https://ec.europa.eu/consumers/odr/</a>. {t('eu-resolution-praragraph-2')}</p>
                     </div>
                     <div>
                         <h2 className="text-lg font-semibold mb-2">{t('consumer-resolution-heading')}</h2>
-                        <p className='max-w-2xl'>{t('consumer-resolution-paragraph')} (<a href="https://www.verbraucher-schlichter.de">https://www.verbraucher-schlichter.de</a>).</p>
+                        <p className='max-w-2xl'>{t('consumer-resolution-paragraph')} (<a href="https://www.verbraucher-schlichter.de" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>https://www.verbraucher-schlichter.de</a>).</p>
                     </div>
                 </div>
             </div>

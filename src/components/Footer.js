@@ -30,7 +30,7 @@ export const Footer = () => {
                     {t('outreach')}
                 </p>
             </div>
-            <Link to='mailto:info@joschka-kreusser.de' className='text-black border border-black uppercase px-6 py-6 mt-8 md:mt-24 flex flex-row justify-center items-center hover:bg-black hover:text-white rounded-full md:text-2xl gap-2 hover-path-white'>
+            <Link to='mailto:info@joschka-kreusser.de' className='text-black border border-black uppercase px-6 py-6 mt-8 md:mt-24 flex flex-row justify-center items-center hover:bg-black hover:text-white rounded-full md:text-2xl gap-2 hover-path-white cursor-pointer'>
                 {t('call-to-action')}
                 <svg
                     width="10"
@@ -58,10 +58,10 @@ export const Footer = () => {
                             {t('back-to-top')}
                         </li>
                         <Link to="/imprint">
-                            <li className='text-black sm:py-2'>{t('imprint')}</li>
+                            <li className='text-black sm:py-2 cursor-pointer'>{t('imprint')}</li>
                         </Link>
                         <Link to="/privacy-policy">
-                            <li className='text-black sm:py-2'>{t('privacy-policy')}</li>
+                            <li className='text-black sm:py-2 cursor-pointer'>{t('privacy-policy')}</li>
                         </Link>
                     </ul>
                 </nav>
