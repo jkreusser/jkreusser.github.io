@@ -11,7 +11,7 @@ const Process = () => {
     return (
         <section id="process" className="max-w-screen-2xl mx-auto flex flex-col items-start justify-center text-left my-32 md:my-48 px-8 md:px-16">
             <h2 className='mb-8 text-4xl'>{t('process')}</h2>
-            <hr className='border-white/10 w-full'></hr>
+            <hr className='border-white/10 w-full' />
             <div className="flex flex-col md:flex-row w-full justify-between items-stretch md:gap-8 lg:gap-24">
                 <div className="flex flex-col items-start gap-16 py-24 flex-1">
                     <div className='w-full flex justify-center'>
