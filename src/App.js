@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Header from './components/Header';
 import Imprint from './components/Imprint';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsAndConditions from './components/TermsAndConditions';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Service from './components/Service';
@@ -15,7 +16,7 @@ import DentaltechnikWeber from './work/DentaltechnikWeber';
 import ShapeUp from './work/ShapeUp';
 import Lottie from 'lottie-react';
 import logoAnimation from './lottie/logoAnimation.json';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, createRef } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 
@@ -23,9 +24,17 @@ function App() {
   const { t } = useTranslation();
   const location = useLocation();
   const [firstLoad, setFirstLoad] = useState(true);
+  const nodeRef = createRef(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [location]);
 
   useEffect(() => {
@@ -40,12 +49,13 @@ function App() {
       <Navigation />
       <TransitionGroup className="w-full">
         <CSSTransition
-          key={location.key}
+          key={location.pathname}
+          nodeRef={nodeRef}
           timeout={1100}
           classNames="black-screen"
         >
           {state => (
-            <div className="relative w-full h-full">
+            <div ref={nodeRef} className="relative w-full h-full">
               <Routes location={location} className="w-full">
                 <Route
                   path="/"
@@ -85,6 +95,25 @@ function App() {
                         <link rel="canonical" href="https://www.joschka-kreusser.de/imprint" />
                       </Helmet>
                       <Imprint />
+                      <section className='w-full bg-white'>
+                        <Footer />
+                      </section>
+                    </>
+                  }
+                />
+                <Route
+                  path="/terms"
+                  element={
+                    <>
+                      <Helmet>
+                        <title>AGB | Joschka Kreusser</title>
+                        <meta name="description" content="Allgemeine Geschäftsbedingungen von Joschka Kreusser - Webdesign & Entwicklung in München." />
+                        <meta property="og:title" content="AGB | Joschka Kreusser" />
+                        <meta property="og:description" content="Allgemeine Geschäftsbedingungen von Joschka Kreusser." />
+                        <meta property="og:image" content="/android-chrome-512x512.png" />
+                        <link rel="canonical" href="https://www.joschka-kreusser.de/terms" />
+                      </Helmet>
+                      <TermsAndConditions />
                       <section className='w-full bg-white'>
                         <Footer />
                       </section>

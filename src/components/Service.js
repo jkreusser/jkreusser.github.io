@@ -16,7 +16,7 @@ const Service = () => {
                         <li className="text-white/50">Design Research</li>
                         <li className="text-white/50">Competitor Analysis</li>
                         <li className="text-white/50">User Journeys / Flows</li>
-                        <li className="text-white/50">Mind Mapping</li>
+                        <li className="text-white/50">Information Architecture</li>
                         <li className="text-white/50">Personas</li>
                     </ul>
                 </div>
