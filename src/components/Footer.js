@@ -63,6 +63,9 @@ export const Footer = () => {
                         <Link to="/privacy-policy">
                             <li className='text-black sm:py-2 cursor-pointer'>{t('privacy-policy')}</li>
                         </Link>
+                        <Link to="/terms">
+                            <li className='text-black sm:py-2 cursor-pointer'>{t('terms')}</li>
+                        </Link>
                     </ul>
                 </nav>
             </div>
